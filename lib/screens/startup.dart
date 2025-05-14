@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:screen_login_from_saad_shaikh/screens/login.dart';
 
 class StartUpScreen extends StatelessWidget {
   const StartUpScreen({super.key});
@@ -52,7 +53,9 @@ class StartUpScreen extends StatelessWidget {
                     Text("Continue", style: TextStyle(color: Colors.grey[500], fontSize: 14.sp),),
                     SizedBox(width: 8.w,),
                     TextButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginScreen()));
+                      },
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.center,
