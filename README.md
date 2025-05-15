@@ -22,3 +22,11 @@ this UI inspired by Saad Shaikh this is the link from [figma](https://www.figma.
 
 ### Main packages:
 - [flutter screen utils](https://pub.dev/packages/flutter_screenutil)
+
+### ScreenShot:
+
+![Welcome Screen](assets/screenshot/welcom_screen.png "welcome screen")
+
+![Sign In Screen](assets/screenshot/sign_in_screen.png "sign in screen")
+
+![Sign Up Screen](assets/screenshot/sign_up_screen.png "sign up screen")

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:screen_login_from_saad_shaikh/screens/sign_up.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -12,15 +13,16 @@ class LoginScreen extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 550.h,
+            height: 418.h,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/images/img.png"),
                 fit: BoxFit.cover,
+                alignment: Alignment.bottomCenter,
               ),
             ),
             child: Padding(
-              padding: EdgeInsets.only(top: 450.h, left: 24.w),
+              padding: EdgeInsets.only(top: 355.h, left: 24.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -104,6 +106,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: 88.h,),
                 SizedBox(
                   height: 49.w,
                   width: 343.h,
@@ -124,11 +127,14 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 20.h,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Don't have an account?"),
-                    TextButton(onPressed: (){}, child: Text("Sign up")),
+                    TextButton(onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUpScreen()));
+                    }, child: Text("Sign up")),
                   ],
                 )
               ],
